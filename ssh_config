@@ -1,0 +1,19 @@
+Host server
+	Hostname bothorel.net
+	Port 22
+	User maxence
+
+Host nova
+	Hostname 192.168.1.240
+	Port 22
+	User maxence
+
+Host kimsufi
+	Hostname 37.187.100.183
+	Port 22
+	User maxence
+
+Host yuri
+	Hostname 144.76.74.141
+	Port 2222
+	User root
