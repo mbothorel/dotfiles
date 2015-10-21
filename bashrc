@@ -49,6 +49,8 @@ alias du='du -h --max-depth=1'
 alias grep='grep --color=auto'
 test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 
+alias i3lock-wrapper='sh ~/.config/i3/script/i3lock-wrapper'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
