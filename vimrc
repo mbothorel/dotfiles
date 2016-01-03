@@ -1,4 +1,4 @@
-call pathogen#infect()
+execute pathogen#infect()
 
 " Colors
 colorscheme molokai 
