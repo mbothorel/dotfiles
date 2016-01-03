@@ -11,7 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " plugin on GitHub repo
-Plugin 'tomasr/molokai'
+Plugin 'tomasr/molokai' " colorsheme
+Plugin 'scrooloose/nerdtree' " NerdTree
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
