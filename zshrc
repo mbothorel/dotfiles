@@ -159,3 +159,6 @@ setopt hist_expire_dups_first
 # montre pas une même ligne plus d'une fois, même si elle a été
 # enregistrée
 setopt hist_find_no_dups
+
+# Set emacs shortcuts
+bindkey -e
