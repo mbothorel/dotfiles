@@ -2,11 +2,9 @@
 Configuration files
 
 ## Install
-`cd ~; mkdir git && cd git`
-
-`git clone git://github.com/mbothorel/dofiles.git`
-
-`bash install.sh`
+	cd ~; mkdir git && cd git
+	git clone git://github.com/mbothorel/dofiles.git
+	bash install.sh
 
 ## Vim plugins
 Vim plugins are install with git submodules 
