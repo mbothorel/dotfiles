@@ -14,3 +14,9 @@ Vim plugins are install with git submodules
 	git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
 	git add .
 	git commit -m "Install Fugitive.vim bundle as a submodule."`
+
+## Submodules
+Lors du clone, les submodule ne sont pas récupérés.
+Il faut effectuer ces deux commandes : 
+	git submodule init
+	git submodule update
