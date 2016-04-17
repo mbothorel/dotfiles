@@ -18,5 +18,6 @@ Vim plugins are install with git submodules
 ## Submodules
 Lors du clone, les submodule ne sont pas récupérés.
 Il faut effectuer ces deux commandes : 
+
 	git submodule init
 	git submodule update
