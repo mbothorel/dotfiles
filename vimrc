@@ -1,10 +1,16 @@
-call pathogen#infect()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" Colors
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tomasr/molokai'
+
+call vundle#end()
+
 colorscheme molokai 
-"set background=dark " Si Solarized
-" Lorsque TERM=rxvt, thÃ¨me buguÃ© : on ajoute les couleurs avec
-set t_Co=256
 
 syntax enable			" Active la coloration syntaxique
 syntax on 
@@ -24,7 +30,7 @@ set wrap				" Affiche les lignes trop longues sur plusieurs
 set scrolloff=3			" Affiche un minimum de 3 lignes autour du curseur (pour le scroll)
 
 " Search
-set ignorecase			" Ignore la casse lors dâ€™une recherche
+set ignorecase			" Ignore la casse lors d'une recherche
 set smartcase			" Si une recherche contient une majuscule, re-active la sensibilite a la casse
 set incsearch			" Surligne les resultats de recherche pendant la saisie
 set hlsearch			" Surligne les resultats de recherche
@@ -38,7 +44,7 @@ set foldenable			" Enabling folding
 set foldlevelstart=10	" Open most folds by default
 
 " Active les comportements specifiques aux types de fichiers comme
-" la syntaxe et lâ€™indentation
+" la syntaxe et l'indentation
 filetype on
 filetype plugin on
 filetype indent on
@@ -48,10 +54,5 @@ filetype indent on
 nnoremap j gj
 nnoremap k gk
 
-" Se passer de la touche Esc : deux fois sur :
-:imap ;; <Esc>
-:map ;; <Esc>
-
-
-" Pour afficher les caractÃ¨res spÃ©ciaux
-set listchars=nbsp:Â¤,tab:>-,trail:Â¤,extends:>,precedes:<,eol:Â¶
+" Pour afficher les caractères spéciaux
+set listchars=nbsp:¤,tab:>-,trail:¤,extends:>,precedes:<,eol:¶
