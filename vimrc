@@ -56,3 +56,4 @@ nnoremap k gk
 
 " Pour afficher les caractères spéciaux
 set listchars=nbsp:¤,tab:>-,trail:¤,extends:>,precedes:<,eol:¶
+set list

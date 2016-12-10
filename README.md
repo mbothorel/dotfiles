@@ -7,7 +7,7 @@ Configuration files
 	bash install.sh
 
 ## Vim plugins
-Vim plugins are install with git submodules 
+Vim plugins are install with git submodules
 
 	cd ~/.vim
 	mkdir ~/.vim/bundle
@@ -17,14 +17,14 @@ Vim plugins are install with git submodules
 
 ## Submodules
 Lors du clone, les submodule ne sont pas récupérés.
-Il faut effectuer ces deux commandes : 
+Il faut effectuer ces deux commandes :
 
 	git submodule init
 	git submodule update
 
 ## Son thinkpad t450
 Installer les paquets suivants :
-    
+
     zita-alsa-pcmi
     alsa-lib
 	alsa-utils
