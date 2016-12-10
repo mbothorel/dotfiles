@@ -21,3 +21,16 @@ Il faut effectuer ces deux commandes :
 
 	git submodule init
 	git submodule update
+
+## Son thinkpad t450
+Installer les paquets suivants :
+    
+    zita-alsa-pcmi
+    alsa-lib
+	alsa-utils
+	pulseaudio
+	pavucontrol
+
+Puis créer le fichier /etc/modprobe.d/alsa-base.conf :
+
+	options snd_hda_intel index=1,0
