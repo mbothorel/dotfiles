@@ -7,13 +7,15 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tomasr/molokai'
+Plugin 'nginx.vim'
 
 call vundle#end()
 
-colorscheme molokai 
+colorscheme molokai
+set t_Co=256
 
 syntax enable			" Active la coloration syntaxique
-syntax on 
+syntax on
 
 " Spaces & Tabs
 set tabstop=4 			" number of spaces in tab when editing
