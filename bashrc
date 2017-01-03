@@ -1,3 +1,7 @@
+# Enable bash completion
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+			. /usr/share/bash-completion/bash_completion
+
 # Set history lenght
 # number of line per session
 export HISTSIZE=10000
