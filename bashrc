@@ -26,7 +26,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS="-FSRXI"
 
-PS1='[\[\e[0;31m\]\u\[\e[m\]@\[\e[0;34m\]\h \[\e[0;33m\]\W\e[m\]]\$ '
+PS1='[\[\e[0;31m\]\u\[\e[m\]@\[\e[0;34m\]\h \[\e[0;33m\]\W\[\e[m\]]$ '
 
 # goto directory
 shopt -s autocd
