@@ -32,10 +32,8 @@ client.urgent           #2f343a #900000 #ffffff #900000
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# launch urxvtd
-exec --no-startup-id urxvtd -q -o -f 
 # start applications
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec urxvt
 #bindsym $mod+b exec chromium-brower
 bindsym $mod+n exec zathura 
 
@@ -185,6 +183,6 @@ bar {
 }
 
 # Changement du fond d'écran
-exec --no-startup-id feh --bg-scale /home/maxence/.config/i3/debian.jpg
+exec --no-startup-id feh --bg-scale /home/maxence/.config/i3/arch.jpg
 exec --no-startup-id nm-applet
 exec --no-startup-id xcompmgr -c
