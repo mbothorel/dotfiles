@@ -8,6 +8,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tomasr/molokai'
 Plugin 'nginx.vim'
+Plugin 'gnupg.vim'
+Plugin 'saltstack/salt-vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
@@ -59,3 +62,6 @@ nnoremap k gk
 " Pour afficher les caractères spéciaux
 set listchars=nbsp:¤,tab:>-,trail:¤,extends:>,precedes:<,eol:¶
 set list
+
+" NerdTree
+autocmd vimenter * NERDTree

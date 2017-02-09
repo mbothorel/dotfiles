@@ -12,6 +12,7 @@ export HISTFILESIZE=200000
 alias ll='ls -lahF --color=auto'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias ip='ip -c'
 alias du='du -h'
 alias df='df -h'
 alias frequency='history | cut -c8- | sort | uniq -c | sort -rn | head -20'
