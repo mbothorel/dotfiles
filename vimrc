@@ -59,9 +59,11 @@ filetype indent on
 nnoremap j gj
 nnoremap k gk
 
-" Pour afficher les caractères spéciaux
+" Display hidden characters
 set listchars=nbsp:¤,tab:>-,trail:¤,extends:>,precedes:<,eol:¶
 set list
 
 " NerdTree
-autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree	" Start Nerdtree
+autocmd BufNew * wincmd l	" Focus to file
+autocmd VimEnter * wincmd p	" Focus to file

@@ -7,6 +7,8 @@
 export HISTSIZE=10000
 # number of line in the log
 export HISTFILESIZE=200000
+# Avoid duplicates
+export HISTCONTROL=ignoreboth:erasedups
 
 # Aliases
 alias ll='ls -lahF --color=auto'
