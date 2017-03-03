@@ -61,9 +61,13 @@ nnoremap k gk
 
 " Display hidden characters
 set listchars=nbsp:¤,tab:>-,trail:¤,extends:>,precedes:<,eol:¶
-set list
+"set list
+
+" map w!! to write on file I do not have write access
+cmap w!! w !sudo tee % >/dev/null
 
 " NerdTree
-autocmd vimenter * NERDTree	" Start Nerdtree
-autocmd BufNew * wincmd l	" Focus to file
-autocmd VimEnter * wincmd p	" Focus to file
+"autocmd vimenter * NERDTree	" Start Nerdtree
+"autocmd BufNew * wincmd l	" Focus to file
+"autocmd VimEnter * wincmd p	" Focus to file
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
