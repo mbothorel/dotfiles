@@ -17,21 +17,19 @@ call vundle#end()
 colorscheme molokai
 set t_Co=256
 
-syntax enable			" Active la coloration syntaxique
-syntax on
-
 " Spaces & Tabs
-set tabstop=4 			" number of spaces in tab when editing
-set softtabstop=4		" tabs are spaces
-" set ependtab 			" Tabs are spaces
+set tabstop=8			" how many columns a tab counts for
+set noexpandtab			" Tabs are spaces
+set softtabstop=4		" how many columns when hit Tab in insert mode
+set shiftwidth=4		" how many columns text is indented with the reindent operations
 
 " UI Config
-set title				" Set Windows title VIM
-set number				" Show line number
-set ruler				" Show cursor
+set title			" Set Windows title VIM
+set number			" Show line number
+set ruler			" Show cursor
 set cursorline			" Highlight curent line
 set wildmenu			" Visual autocomplete for command menu
-set wrap				" Affiche les lignes trop longues sur plusieurs
+set wrap			" Affiche les lignes trop longues sur plusieurs
 set scrolloff=3			" Affiche un minimum de 3 lignes autour du curseur (pour le scroll)
 
 " Search
@@ -46,13 +44,11 @@ set noerrorbells		" Empeche Vim de beeper
 
 " Folding
 set foldenable			" Enabling folding
-set foldlevelstart=10	" Open most folds by default
+set foldlevelstart=10		" Open most folds by default
 
-" Active les comportements specifiques aux types de fichiers comme
-" la syntaxe et l'indentation
-filetype on
-filetype plugin on
-filetype indent on
+" Active les comportements specifiques aux types de fichiers comme la syntaxe et l'indentation
+syntax on
+filetype plugin indent on
 
 " Bindigs
 " move vertically by visual line
