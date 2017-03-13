@@ -182,7 +182,8 @@ bar {
 	}
 }
 
-# Changement du fond d'écran
-exec --no-startup-id feh --bg-scale /home/maxence/.config/i3/arch.jpg
+# startup launch
+exec --no-startup-id redshift -c ~/.config/redshift.conf
+exec --no-startup-id feh --bg-scale /home/mbothorel/.config/i3/arch.jpg
 exec --no-startup-id nm-applet
 exec --no-startup-id xcompmgr -c
