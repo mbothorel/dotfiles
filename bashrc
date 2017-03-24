@@ -18,6 +18,7 @@ alias ip='ip -c'
 alias du='du -h'
 alias df='df -h'
 alias frequency='history | cut -c8- | sort | uniq -c | sort -rn | head -20'
+alias serve='python3 -m http.server'
 
 # LESS
 export LESS_TERMCAP_mb=$'\E[01;31m'
