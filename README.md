@@ -34,3 +34,5 @@ Installer les paquets suivants :
 Puis créer le fichier /etc/modprobe.d/alsa-base.conf :
 
 	options snd_hda_intel index=1,0
+
+# test
